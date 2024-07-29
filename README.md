@@ -1,8 +1,4 @@
-
-
----
-
-# 直播通知应用
+# hololive会限直播通知
 
 此应用旨在通知用户直播活动。请按照以下步骤配置和运行应用程序。
 
@@ -46,7 +42,7 @@
 
 ---
 
-# Live Stream Notification Application
+# hololive members live stream notification
 
 This application is designed to notify users about live streams. Please follow the steps below to configure and run the application.
 
@@ -83,7 +79,3 @@ If you are in China or other regions with restricted network access, follow thes
    ```bash
    python app.py
    ```
-
----
-
-Feel free to adjust any additional details based on your specific needs.
