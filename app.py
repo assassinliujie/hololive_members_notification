@@ -5,13 +5,12 @@ import time
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-import sys
 import pandas as pd
 
 # 数据库文件名和表名
 DATABASE_FILE = 'channel.db'
 TABLE_NAME = 'hololive'
-CHANNEL_FILE = 'channel.xlsx'
+CHANNEL_FILE = 'channel.csv'  # 改为CSV文件
 
 # SMTP 配置
 SMTP_SERVER = 'smtp.qq.com'
@@ -37,7 +36,7 @@ def check_live_status(url):
         return False
 
 def init_database():
-    """初始化数据库并从XLSX文件加载数据"""
+    """初始化数据库并从CSV文件加载数据"""
     if os.path.exists(DATABASE_FILE):
         print(f"{DATABASE_FILE} 已存在，跳过创建表格")
         return
@@ -52,8 +51,8 @@ def init_database():
         )
     ''')
     
-    # 从XLSX文件中读取数据并插入数据库
-    df = pd.read_excel(CHANNEL_FILE)
+    # 从CSV文件中读取数据并插入数据库
+    df = pd.read_csv(CHANNEL_FILE)
     for index, row in df.iterrows():
         cursor.execute(f'''
             INSERT INTO {TABLE_NAME} (channelname, is_live, url)
