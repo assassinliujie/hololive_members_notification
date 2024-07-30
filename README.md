@@ -1,4 +1,4 @@
-中文|ENGLISH
+[中文](#hololive会限直播通知)|[ENGLISH](#hololive_members_live_stream_notification)
 # hololive会限直播通知
 
 此应用旨在通知用户直播活动。请按照以下步骤配置和运行应用程序。
