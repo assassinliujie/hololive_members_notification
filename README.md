@@ -1,4 +1,7 @@
 [中文](#hololive会限直播通知)|[ENGLISH](#hololive_members_live_stream_notification)
+
+自行修改csv表格中的频道名和频道URL即可实现对任意直播进行直播通知
+
 # hololive会限直播通知
 
 此应用旨在通知用户直播活动。请按照以下步骤配置和运行应用程序。
