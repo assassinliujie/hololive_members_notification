@@ -52,7 +52,7 @@ FROM_NAME = 'x' //发送邮件的昵称，跟邮箱名一样即可
 
 ---
 
-# hololive members live stream notification
+# hololive_members_live_stream_notification
 
 This application is designed to notify users about live streams. Please follow the steps below to configure and run the application.
 
