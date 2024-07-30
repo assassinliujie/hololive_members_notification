@@ -9,6 +9,14 @@
 
 1. 打开 `app.py` 文件，找到 SMTP 邮箱配置部分。
 2. 输入你的 SMTP 服务器详细信息，包括服务器地址、端口、用户名和密码。
+3. 
+SMTP_SERVER = 'smtp.qq.com' //smtp服务器地址
+SMTP_PORT = 465 //smtp服务器地址
+SMTP_USERNAME = 'x@qq.com' //邮箱名，即你用来发送通知邮件的邮箱
+SMTP_PASSWORD = 'passwd' //用来发送通知邮件的邮箱的SMTP密码，许多服务商，比如QQ，是有独立SMTP密码的，请自行搜索
+FROM_EMAIL = 'x@qq.com' //邮箱名，即你用来发送通知邮件的邮箱
+TO_EMAIL = 'yourself@qq.com' //接受邮件的邮箱
+FROM_NAME = 'x' //发送邮件的昵称，跟邮箱名一样即可
 
 ### 代理配置
 
